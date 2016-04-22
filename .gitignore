@@ -1028,3 +1028,8 @@ bundle
 doc
 plugin
 syntax
+.themes/ 
+.lyrics/
+.config/Kalypso\ Media/
+ .config/Mendeley\ Ltd./
+.config/Unknown\ Organization/
