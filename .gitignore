@@ -1,26 +1,10 @@
 .AMD/
-	.Mathematica/
-	.Skype/
-	.Xauthority
-	.adobe/
-	.asoundrc.bkp
-	.bash_history
-	.btsync/12977647706128867946.1450296127.journal
-	.btsync/3047968166515395062.1450296209.journal
-	.btsync/78A58334D0883435525D7D4C5E3F3921AAE5AEF0.1.db
-	.btsync/78A58334D0883435525D7D4C5E3F3921AAE5AEF0.availability
-	.btsync/856274526A25DF8A88CB2CC0E625A02B43A0840D.13.db
-	.btsync/856274526A25DF8A88CB2CC0E625A02B43A0840D.availability
-	.btsync/FileDelayConfig
-	.btsync/debug.txt
-	.btsync/history.dat
-	.btsync/history.dat.old
-	.btsync/settings.dat
-	.btsync/settings.dat.old
-	.btsync/sync.dat
-	.btsync/sync.dat.old
-	.btsync/sync.lng
-	.btsync/sync.log
-	.btsync/webui.zip
-	.bundle/
+.Mathematica/
+.Skype/
+.Xauthority
+.adobe/
+.asoundrc.bkp
+.bash_history
+.btsync/
+.bundle/
 
