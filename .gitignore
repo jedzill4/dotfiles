@@ -1,3 +1,5 @@
+*.swp
+
 .AMD/
 .Mathematica/
 .Skype/
@@ -68,19 +70,16 @@ unsorted
 
 Engauge
 ImageMagick
-Kalypso
-Media
+Kalypso\ Media
 LyX
-Mendeley
-Ltd.
+Mendeley\ Ltd.
 Popcorn-Time
 Popcorn-Time-CE
 QtProject.conf
 Skype
 Thunar
 Trolltech.conf
-Unknown
-Organization
+Unknown\ Organization
 VirtualBox
 aurvote
 btsync
