@@ -5,5 +5,15 @@ pdfmerge() { gs -dBATCH -dNOPAUSE -q -sDEVICE=pdfwrite -dPDFSETTINGS=/prepress -
 okular-stdout() {/bin/okular $@;}
 okular() {/bin/nohup /bin/okular $@ 2> /dev/null > /dev/null &;}
 
-hash -d aproxmulti-dev="/home/rbarriga/Doctorado/AproxMulti/source-dev"
-hash -d datos="/home/rbarriga/Extended_disk/datos"
+sigil-stdout() {/bin/sigil $@;}
+sigil() {/bin/nohup /bin/sigil $@ 2> /dev/null > /dev/null &;}
+
+thunar-stdout() {/bin/thunar $@;}
+thunar() {/bin/nohup /bin/thunar $@ 2> /dev/null > /dev/null &;}
+
+inkscape-stdout() {/bin/inkscape $@;}
+inkscape() {/bin/nohup /bin/inkscape $@ 2> /dev/null > /dev/null &;}
+
+engauge-stdout() {/bin/engauge $@;}
+engauge() {/bin/nohup /bin/engauge $@ 2> /dev/null > /dev/null &;}
+
