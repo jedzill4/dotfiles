@@ -17,3 +17,5 @@ inkscape() {/bin/nohup /bin/inkscape $@ 2> /dev/null > /dev/null &;}
 engauge-stdout() {/bin/engauge $@;}
 engauge() {/bin/nohup /bin/engauge $@ 2> /dev/null > /dev/null &;}
 
+libreoffice-stdout() {/bin/libreoffice $@;}
+libreoffice() {/bin/nohup /bin/libreoffice $@ 2> /dev/null > /dev/null &;}
