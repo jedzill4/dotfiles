@@ -23,3 +23,9 @@ libreoffice-stdout() {/bin/libreoffice $@;}
 libreoffice() {/bin/nohup /bin/libreoffice $@ 2> /dev/null > /dev/null &;}
 
 casa() {~rbarriga/bin/casa/casa --nologger --log2term $@ }
+
+## HASH
+
+hash -d aproxmulti-src=$HOME/doctorado/aproxmulti/source
+hash -d corn=$HOME/doctorado/corn
+hash -d expos=$HOME/doctorado/expos
