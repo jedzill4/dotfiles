@@ -1,14 +1,23 @@
+source ~/.vundle.vim
 set nu
 syntax on
 set shiftwidth=4 ts=4
 set smartindent expandtab
 set t_Co=256
+" in case t_Co alone doesn't work, add this as well:
+"let &t_AB="\e[48;5;%dm"
+"let &t_AF="\e[38;5;%dm"
 set encoding=utf-8
 set listchars=tab:▸\ ,eol:¬
 
-" vundle config file
-source ~/.vundle.vim
+set background=dark
 
+
+"let g:airline_powerline_fonts = 1
+
+" vundle config file
+
+colorscheme kalisi
 "  C/C++ autocommands
     augroup vimrc_c
         autocmd!
@@ -24,7 +33,7 @@ source ~/.vundle.vim
 autocmd FileType c,cpp,h source /home/rbarriga/.vim/syntax/opencl.vim
 
 " NerdTree
-map <C-n> :NERDTreeToggle<CR>
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+"map <C-n> :NERDTreeToggle<CR>
+"autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 

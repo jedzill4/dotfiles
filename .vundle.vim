@@ -17,10 +17,15 @@ call vundle#rc()
 " Bundle 'git://git.wincent.com/command-t.git'
 " ...
 
+"Bundle 'https://github.com/altercation/vim-colors-solarized'
+"Bundle 'Xuyuanp/nerdtree-git-plugin'
 Bundle 'vim-scripts/ScrollColors'
-Bundle 'Xuyuanp/nerdtree-git-plugin'
 Bundle "b3niup/numbers.vim"
 Bundle 'https://github.com/nvie/vim-flake8'
+Bundle 'https://github.com/sjl/badwolf'
+Bundle 'https://github.com/tomasr/molokai'
+Bundle 'https://github.com/sickill/vim-monokai'
+Bundle 'https://github.com/freeo/vim-kalisi'
 
 filetype plugin indent on     " required! 
 "
