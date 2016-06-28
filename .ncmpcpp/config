@@ -1,5 +1,3 @@
-mpd_music_dir = "/home/rbarriga/Music"
-mpd_crossfade_time = "5"
 
 
 
@@ -192,7 +190,7 @@ song_status_format = {{%a{ "%b"{ (%y)}} - }{%t}}|{%f}
 song_library_format = {%n - }{%t}|{%f}
 #
 #tag_editor_album_format = {(%y) }%b
-tag_editor_album_format = {(%y) }%b
+#tag_editor_album_format = {(%y) }%b
 #
 ##
 ## Note: Below variables are used for sorting songs in browser.

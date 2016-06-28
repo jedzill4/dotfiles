@@ -1,5 +1,5 @@
-name: corn
-root: ~/doctorado/corn/
+name: expos
+root: ~/doctorado/expos/
 windows:
     - social:
         panes:
