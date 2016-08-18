@@ -1,6 +1,6 @@
 #unsorted config
 
-export TERM=xtem-termite
+export TERM=xterm-termite
 
 # Created by newuser for 5.1.1
 pdfmerge() { gs -dBATCH -dNOPAUSE -q -sDEVICE=pdfwrite -dPDFSETTINGS=/prepress -sOutputFile=$@ ; }
