@@ -4,17 +4,21 @@
  <pageList/>
  <generalInfo>
   <history>
-   <oldPage viewport="0;C2:0.499466:0.955943:1"/>
-   <oldPage viewport="1;C2:0.499466:0.99335:1"/>
-   <oldPage viewport="2;C2:0.499466:0.980881:1"/>
-   <oldPage viewport="3;C2:0.499466:0.968412:1"/>
-   <oldPage viewport="4;C2:0.499466:0.955943:1"/>
-   <oldPage viewport="5;C2:0.499466:0.99335:1"/>
-   <current viewport="6;C2:0.499466:0.182876:1"/>
+   <oldPage viewport="1;C2:0.499737:1.00103:1"/>
+   <oldPage viewport="2;C2:0.499737:0.980115:1"/>
+   <oldPage viewport="3;C2:0.499737:-0.000205002:1"/>
+   <oldPage viewport="2;C2:0.499737:0.0207052:1"/>
+   <oldPage viewport="1;C2:0.499737:0.0170152:1"/>
+   <oldPage viewport="0;C2:0.499737:0.988315:1"/>
+   <oldPage viewport="1;C2:0.499737:0.992005:1"/>
+   <oldPage viewport="2;C2:0.499737:0.995695:1"/>
+   <oldPage viewport="3;C2:0.499737:0.0153752:1"/>
+   <oldPage viewport="2;C2:0.499737:0.0116851:1"/>
+   <current viewport="1;C2:0.499737:0.721402:1"/>
   </history>
   <views>
    <view name="PageView">
-    <zoom mode="1" value="1.07821"/>
+    <zoom mode="1" value="2.18519"/>
    </view>
   </views>
  </generalInfo>

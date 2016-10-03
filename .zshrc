@@ -49,4 +49,5 @@ hash -d aproxmulti-src=$HOME/doctorado/aproxmulti/source
 hash -d aproxmulti-doc=$HOME/doctorado/aproxmulti/apuntes
 hash -d corn=$HOME/doctorado/corn
 hash -d expos=$HOME/doctorado/expos
-hash -d datos=$HOME/datos/
+hash -d datos=$HOME/datos
+hash -d cursos=$HOME/doctorado/cursos
