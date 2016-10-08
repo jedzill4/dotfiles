@@ -25,8 +25,7 @@ Bundle 'https://github.com/nvie/vim-flake8'
 Bundle 'https://github.com/sjl/badwolf'
 Bundle 'https://github.com/tomasr/molokai'
 Bundle 'https://github.com/sickill/vim-monokai'
-"Bundle 'https://github.com/freeo/vim-kalisi'   " i have my personal version of
-                                                "kalisi
+Bundle 'https://github.com/jedzill4/vim-kalisi'  
 
 filetype plugin indent on     " required! 
 "
