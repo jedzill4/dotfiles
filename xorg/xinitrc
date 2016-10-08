@@ -1,0 +1,2 @@
+exec openbox-session
+setxkbmap -option -option compose:rwin
