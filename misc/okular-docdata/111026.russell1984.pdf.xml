@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE documentInfo>
+<documentInfo url="/home/rbarriga/doctorado/corn/037_lab_russell1984/russell1984.pdf">
+ <pageList>
+  <page number="0">
+   <annotationList>
+    <annotation type="4">
+     <base flags="0" opacity="0.75" creationDate="2016-10-07T17:17:48" uniqueName="okular-{841accd3-1322-44a0-9492-e4f0bcebd36c}" author="rbarriga" modifyDate="2016-10-07T17:17:48" color="#1f66ff">
+      <boundary l="0.0885806" r="0.479189" b="0.82721" t="0.761668"/>
+     </base>
+     <hl>
+      <quad dx="0.125649" cx="0.479751" dy="0.762548" bx="0.479751" cy="0.762548" ax="0.125649" by="0.777027" ay="0.777027" feather="1"/>
+      <quad dx="0.0893043" cx="0.479751" dy="0.777992" bx="0.479751" cy="0.777992" ax="0.0893043" by="0.792471" ay="0.792471" feather="1"/>
+      <quad dx="0.0893043" cx="0.479751" dy="0.793436" bx="0.479751" cy="0.793436" ax="0.0893043" by="0.807915" ay="0.807915" feather="1"/>
+     </hl>
+    </annotation>
+    <annotation type="4">
+     <base flags="0" opacity="0.75" creationDate="2016-10-07T17:18:18" uniqueName="okular-{f6d04432-4570-4420-b907-873466d95cd0}" author="rbarriga" modifyDate="2016-10-07T17:18:18" color="#1f66ff">
+      <boundary l="0.519744" r="0.912487" b="0.202582" t="0.155909"/>
+     </base>
+     <hl>
+      <quad dx="0.520249" cx="0.912773" dy="0.156371" bx="0.912773" cy="0.156371" ax="0.520249" by="0.169884" ay="0.169884" feather="1"/>
+      <quad dx="0.520249" cx="0.912773" dy="0.171815" bx="0.912773" cy="0.171815" ax="0.520249" by="0.186293" ay="0.186293" feather="1"/>
+      <quad dx="0.520249" cx="0.693666" dy="0.188224" bx="0.693666" cy="0.188224" ax="0.520249" by="0.202703" ay="0.202703" feather="1"/>
+     </hl>
+    </annotation>
+   </annotationList>
+  </page>
+ </pageList>
+ <generalInfo>
+  <history>
+   <oldPage viewport="0;C2:0.499466:1.02284:1"/>
+   <oldPage viewport="1;C2:0.499466:0.0584843:1"/>
+   <oldPage viewport="0;C2:0.499466:1.05263:1"/>
+   <oldPage viewport="1;C2:0.499466:0.990939:1"/>
+   <oldPage viewport="2;C2:0.499466:0.986853:1"/>
+   <oldPage viewport="3;C2:0.499466:0.0411862:1"/>
+   <oldPage viewport="2;C2:0.499466:0.000821693:1"/>
+   <oldPage viewport="1;C2:0.499466:0.0502471:1"/>
+   <current viewport="0;C2:0.499466:0.912612:1"/>
+  </history>
+  <views>
+   <view name="PageView">
+    <zoom mode="1" value="1.08175"/>
+   </view>
+  </views>
+ </generalInfo>
+</documentInfo>

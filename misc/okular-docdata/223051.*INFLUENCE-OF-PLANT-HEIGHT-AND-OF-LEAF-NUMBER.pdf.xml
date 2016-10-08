@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE documentInfo>
+<documentInfo url="/home/rbarriga/doctorado/corn/036_/*INFLUENCE-OF-PLANT-HEIGHT-AND-OF-LEAF-NUMBER.pdf">
+ <pageList>
+  <page number="1">
+   <annotationList>
+    <annotation type="4">
+     <base flags="0" opacity="0.75" creationDate="2016-10-07T16:51:47" uniqueName="okular-{67a262b0-9726-4ca8-abac-140a67e8afc4}" author="rbarriga" modifyDate="2016-10-07T16:51:47" color="#1f66ff">
+      <boundary l="0.138741" r="0.859125" b="0.90939" t="0.882208"/>
+     </base>
+     <hl>
+      <quad dx="0.760046" cx="0.859931" dy="0.882979" bx="0.859931" cy="0.882979" ax="0.760046" by="0.89539" ay="0.89539" feather="1"/>
+      <quad dx="0.138921" cx="0.347876" dy="0.896277" bx="0.347876" cy="0.896277" ax="0.138921" by="0.909574" ay="0.909574" feather="1"/>
+     </hl>
+    </annotation>
+   </annotationList>
+  </page>
+ </pageList>
+ <generalInfo>
+  <history>
+   <oldPage viewport="2;C2:0.499466:1.00329:1"/>
+   <oldPage viewport="3;C2:0.499466:0.981878:1"/>
+   <oldPage viewport="4;C2:0.499466:0.0288303:1"/>
+   <oldPage viewport="3;C2:0.499466:0.0477759:1"/>
+   <oldPage viewport="2;C2:0.499466:0.0436573:1"/>
+   <oldPage viewport="1;C2:0.499466:0.00411862:1"/>
+   <oldPage viewport="0;C2:0.499466:0.996705:1"/>
+   <oldPage viewport="1;C2:0.499466:0.0362438:1"/>
+   <oldPage viewport="0;C2:0.499466:0.996705:1"/>
+   <oldPage viewport="1;C2:0.499466:0.0362438:1"/>
+   <current viewport="0;C2:0.499466:0.403624:1"/>
+  </history>
+  <views>
+   <view name="PageView">
+    <zoom mode="1" value="1.07821"/>
+   </view>
+  </views>
+ </generalInfo>
+</documentInfo>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE documentInfo>
+<documentInfo url="/home/rbarriga/doctorado/corn/35_lab_lejeune1996/*lejeune1996_mleaves.pdf">
+ <pageList>
+  <page number="0">
+   <annotationList>
+    <annotation type="4">
+     <base flags="0" opacity="0.75" creationDate="2016-10-07T16:35:44" uniqueName="okular-{78ff42f8-1f4a-403c-81b9-0e80f662d707}" author="rbarriga" modifyDate="2016-10-07T16:35:44" color="#1f66ff">
+      <boundary l="0.0298013" r="0.474172" b="0.403241" t="0.331019"/>
+     </base>
+     <hl>
+      <quad dx="0.288321" cx="0.474453" dy="0.331351" bx="0.474453" cy="0.331351" ax="0.288321" by="0.343246" ay="0.343246" feather="1"/>
+      <quad dx="0.0304136" cx="0.474453" dy="0.346644" bx="0.474453" cy="0.346644" ax="0.0304136" by="0.358539" ay="0.358539" feather="1"/>
+      <quad dx="0.0304136" cx="0.474453" dy="0.361937" bx="0.474453" cy="0.361937" ax="0.0304136" by="0.373832" ay="0.373832" feather="1"/>
+      <quad dx="0.0304136" cx="0.474453" dy="0.376381" bx="0.474453" cy="0.376381" ax="0.0304136" by="0.388275" ay="0.388275" feather="1"/>
+      <quad dx="0.0304136" cx="0.329684" dy="0.391674" bx="0.329684" cy="0.391674" ax="0.0304136" by="0.403568" ay="0.403568" feather="1"/>
+     </hl>
+    </annotation>
+   </annotationList>
+  </page>
+  <page number="1">
+   <annotationList>
+    <annotation type="4">
+     <base flags="0" opacity="0.75" creationDate="2016-10-07T16:36:31" uniqueName="okular-{407be84a-499e-4a28-93f0-5dd2cb8ca0d1}" author="rbarriga" modifyDate="2016-10-07T16:36:31" color="#1f66ff">
+      <boundary l="0.065703" r="0.496058" b="0.895082" t="0.868852"/>
+     </base>
+     <hl>
+      <quad dx="0.262019" cx="0.496394" dy="0.868895" bx="0.496394" cy="0.868895" ax="0.262019" by="0.880891" ay="0.880891" feather="1"/>
+      <quad dx="0.0661058" cx="0.151442" dy="0.883462" bx="0.151442" cy="0.883462" ax="0.0661058" by="0.895458" ay="0.895458" feather="1"/>
+     </hl>
+    </annotation>
+   </annotationList>
+  </page>
+ </pageList>
+ <generalInfo>
+  <history>
+   <oldPage viewport="5;C2:0.5:0.0372365:1"/>
+   <oldPage viewport="4;C2:0.499668:0.0233711:1"/>
+   <oldPage viewport="3;C2:0.5:0.014326:1"/>
+   <oldPage viewport="2;C2:0.5:0.0187674:1"/>
+   <oldPage viewport="1;C2:0.5:0.0128806:1"/>
+   <oldPage viewport="0;C2:0.5:0.990509:1"/>
+   <oldPage viewport="1;C2:0.5:0.996487:1"/>
+   <oldPage viewport="2;C2:0.5:0.991891:1"/>
+   <oldPage viewport="3;C2:0.289651:-0.00117426:1"/>
+   <oldPage viewport="2;C2:0.29244:0.976599:1"/>
+   <current viewport="3;C2:0.289651:0.900658:1"/>
+  </history>
+  <views>
+   <view name="PageView">
+    <zoom mode="0" value="2"/>
+   </view>
+  </views>
+ </generalInfo>
+</documentInfo>

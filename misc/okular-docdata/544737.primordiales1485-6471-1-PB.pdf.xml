@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE documentInfo>
+<documentInfo url="/home/rbarriga/doctorado/corn/unsorted_papers/primordiales1485-6471-1-PB.pdf">
+ <pageList>
+  <page number="3">
+   <annotationList>
+    <annotation type="4">
+     <base flags="0" opacity="0.75" creationDate="2016-10-07T17:48:08" uniqueName="okular-{d8b3ae89-1d4a-4d71-9cfc-1a01f528b734}" author="rbarriga" modifyDate="2016-10-07T17:48:08" color="#1f66ff">
+      <boundary l="0.118463" r="0.653148" b="0.536953" t="0.524887"/>
+     </base>
+     <hl>
+      <quad dx="0.118501" cx="0.654172" dy="0.525597" bx="0.654172" cy="0.525597" ax="0.118501" by="0.537543" ay="0.537543" feather="1"/>
+     </hl>
+    </annotation>
+   </annotationList>
+  </page>
+ </pageList>
+ <generalInfo>
+  <history>
+   <oldPage viewport="5;C2:0.5:0.0366972:1"/>
+   <oldPage viewport="4;C2:0.5:0.00917431:1"/>
+   <oldPage viewport="3;C2:0.5:0.0428135:1"/>
+   <oldPage viewport="2;C2:0.5:0.0152905:1"/>
+   <oldPage viewport="1;C2:0.5:0.966361:1"/>
+   <oldPage viewport="2;C2:0.5:0.993884:1"/>
+   <oldPage viewport="3;C2:0.5:0.960245:1"/>
+   <oldPage viewport="4;C2:0.5:0.987768:1"/>
+   <oldPage viewport="5;C2:0.5:0.0301003:1"/>
+   <oldPage viewport="4;C2:0.5:0.0401338:1"/>
+   <current viewport="3;C2:0.5:0.585284:1"/>
+  </history>
+  <views>
+   <view name="PageView">
+    <zoom mode="0" value="0.75"/>
+   </view>
+  </views>
+ </generalInfo>
+</documentInfo>
