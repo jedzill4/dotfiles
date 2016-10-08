@@ -1,0 +1,64 @@
+- defaults:
+    link:
+        create: true
+        relink: true
+
+- clean: ['~','~/.config']
+
+
+# Xorg configuration
+- shell: 
+    - echo 'Instaling Xorg configuration'
+- link:
+    ~/.xinitrc: xorg/xinitrc
+
+# Console configuration
+- shell:
+    - echo 'Installing console configuration'
+    - [mkdir -p ~/.config/termite/, Creating termite config file]
+    
+- link:
+    ~/.config/termite/config: console/termite.conf
+    ~/.zshrc: console/zshrc
+    ~/.vimrc: console/vimrc
+    ~/.vim-plugins.vim: console/vim-plugins.vim
+    ~/.vim: console/vim
+    ~/.tmux.conf: console/tmux.conf
+    ~/.tmux: console/tmux
+    ~/.tmuxinator: console/tmuxinator
+
+# Social & media configs
+- shell:
+    - echo 'Installing Social & Media configs'
+- link:
+    ~/.muttrc: social-media/muttrc
+    ~/.mutt: social-media/mutt
+    ~/.weechat: social-media/weechat
+    ~/.ncmpcpp: social-media/ncmpcpp
+    ~/.config/mpd: social-media/mpd
+
+
+# Window Manager
+- shell:
+    - echo 'Installing Graphical Visuals configs'
+- link:
+    ~/.conky: window-manager/conky
+    ~/.wallpapers: window-manager/wallpapers
+    ~/.icons: window-manager/icons
+    ~/.themes: window-manager/openbox-themes
+    ~/.config/openbox: window-manager/openbox
+    ~/.config/nitrogen: window-manager/nitrogen
+
+# Misc configs
+- shell:
+    - echo 'Installing misc configurations'
+    - [mkdir -p ~/.config/matplotlib, Creating matplotlib folder]
+    - [mkdir -p ~/.kde4/share/app/okular/docdata, Creating okular-docdata folder]
+- link:
+    ~/.kde4/share/apps/okular/docdata: misc/okular-docdata 
+    ~/.config/matplotlib/stylelib: misc/matplotlib-stylelib/ 
+    ~/.fonts: misc/fonts
+
+
+
+
