@@ -20,6 +20,7 @@
 - link:
     ~/.config/termite/config: console/termite.conf
     ~/.zshrc: console/zshrc
+    ~/.zplugrc: console/zplugrc
     ~/.vimrc: console/vimrc
     ~/.vim-plugins.vim: console/vim-plugins.vim
     ~/.vim: console/vim
