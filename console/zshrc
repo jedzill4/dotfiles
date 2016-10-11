@@ -1,6 +1,15 @@
-#unsorted config
+source ~/.zplugrc
 
-export TERM=xterm-termite
+if [[ $(echo ${0[1]}) == "/" && -z $TMUX ]]; then
+    zstyle ':prompt:grml:left:setup' items rc change-root path percent    
+    zstyle ':prompt:grml:right:setup' items vcs sad-smiley
+    export TERM=xterm-termite
+    mux default
+else;
+    zstyle ':prompt:grml:left:setup' items rc change-root user at host path   vcs percent 
+    zstyle ':prompt:grml:right:setup' items sad-smiley
+fi
+
 
 # Created by newuser for 5.1.1
 pdfmerge() { gs -dBATCH -dNOPAUSE -q -sDEVICE=pdfwrite -dPDFSETTINGS=/prepress -sOutputFile=$@ ; }
@@ -51,3 +60,5 @@ hash -d corn=$HOME/doctorado/corn
 hash -d expos=$HOME/doctorado/expos
 hash -d datos=$HOME/datos
 hash -d cursos=$HOME/doctorado/cursos
+
+
