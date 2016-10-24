@@ -22,6 +22,9 @@ function mdview { pandoc "$1" -f markdown -t html | lynx -stdin;}
 okular-stdout() {/bin/okular $@;}
 okular() {/bin/nohup /bin/okular $@ 2> /dev/null > /dev/null &;}
 
+zathura-stdout() {/bin/zathura $@;}
+zathura() {/bin/nohup /bin/zathura $@ 2> /dev/null > /dev/null &;}
+
 mathematica-stdout() {/usr/local/Wolfram/Mathematica/10.0/Executables/mathematica $@;}
 mathematica() {/bin/nohup /usr/local/Wolfram/Mathematica/10.0/Executables/mathematica $@ 2> /dev/null > /dev/null &;}
 
@@ -56,7 +59,12 @@ atlauncher() {nohup atlauncher > /dev/null 2> /dev/null &}
 
 hash -d aproxmulti-src=$HOME/doctorado/aproxmulti/source
 hash -d aproxmulti-doc=$HOME/doctorado/aproxmulti/apuntes
+
 hash -d corn=$HOME/doctorado/corn
+hash -d corn-db=$HOME/doctorado/corn/database
+hash -d corn-src=$HOME/doctorado/corn/src
+hash -d corn-doc=$HOME/doctorado/corn/doc
+
 hash -d expos=$HOME/doctorado/expos
 hash -d datos=$HOME/datos
 hash -d cursos=$HOME/doctorado/cursos
