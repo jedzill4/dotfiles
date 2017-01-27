@@ -15,6 +15,7 @@ axes.axisbelow: True
 image.cmap: Greys
 font.family: sans-serif
 font.sans-serif: Arial, Liberation Sans, Bitstream Vera Sans, sans-serif
+font.size: 40
 grid.linestyle: -
 lines.solid_capstyle: round
 
@@ -34,8 +35,8 @@ ytick.minor.size: 3
 
 axes.spines.top     : False
 axes.spines.right   : False
-#xtick.top           : False
-#ytick.right         : False
+xtick.top           : False
+ytick.right         : False
 
 axes.grid.axis      : y
 text.usetex         : False
