@@ -1,10 +1,11 @@
 source ~/.zplugrc
+source ~/.zshrc-$HOST
 
-if [[ $(echo ${0[1]}) == "/" && -z $TMUX ]]; then
+
+if [[ -n $TMUX ]]; then
     zstyle ':prompt:grml:left:setup' items rc change-root path percent    
     zstyle ':prompt:grml:right:setup' items vcs sad-smiley
     export TERM=xterm-termite
-    mux default
 else;
     zstyle ':prompt:grml:left:setup' items rc change-root user at host path   vcs percent 
     zstyle ':prompt:grml:right:setup' items sad-smiley
@@ -45,6 +46,15 @@ libreoffice() {/bin/nohup /bin/libreoffice $@ 2> /dev/null > /dev/null &;}
 
 filezilla-stdout() {/bin/filezilla $@;}
 filezilla() {/bin/nohup /bin/filezilla $@ 2> /dev/null > /dev/null &;}
+
+gimp-stdout() {/bin/gimp $@;}
+gimp() {/bin/nohup /bin/gimp $@ 2> /dev/null > /dev/null &;}
+
+xournal-stdout() {/bin/xournal $@;}
+xournal() {/bin/nohup /bin/xournal $@ 2> /dev/null > /dev/null &;}
+
+krita-stdout() {/bin/krita $@;}
+krita() {/bin/nohup /bin/krita $@ 2> /dev/null > /dev/null &;}
 
 java7() {/usr/lib/jvm/java-7-openjdk/bin/java $@}
 java8() {/usr/lib/jvm/java-8-openjdk/bin/java $@}

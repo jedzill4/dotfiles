@@ -1,0 +1,31 @@
+- defaults:
+    link:
+        create: true
+        relink: true
+        force: true
+
+
+
+# Console configuration
+- shell:
+    - echo 'Installing console configuration'
+    
+- link:
+    ~/.config/termite/config: host/anomality/console/termite.conf
+    ~/.zshrc-anomality: host/anomality/console/zshrc
+    ~/.tmux.design: host/anomality/console/tmux-design.conf
+
+
+# Window Manager
+- shell:
+    - echo 'Installing Graphical Visuals configs'
+    - [mkdir -p ~/.conky/, Creating termite config file]
+- link:
+    ~/.conky/config: host/anomality/window-manager/conky/anomality-dpi96
+    ~/.config/openbox/autostart: host/anomality/window-manager/openbox/autostart
+    ~/.config/openbox/rc.xml: host/anomality/window-manager/openbox/rc.xml
+
+
+
+
+
