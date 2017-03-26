@@ -1,0 +1,70 @@
+conky.config = {
+--!/usr/bin/conky -d -c
+--#	.conkyrc configuration
+	alignment = 'top_right',
+	background = true,
+	border_margin = '5',
+	border_width = 5,
+	color0 = '#555555',
+	color1 = '#FCAF3E',-- zolty
+	color2 = '#64574e',-- braz
+	color3 = '#a82553',-- rozowy f71f84
+	color4 = '#5e1014',-- bordowy
+	color5 = '#64574e',-- braz
+	color6 = '#a7a7a7',-- szary
+	color7 = '#8888CC',--  (COOL)
+	color8 = '#9d9c61',-- zolto-szary
+	color9 = '#00ffed',--Cian
+
+	color10 = 'A5C80C',-- green
+	cpu_avg_samples = 2,
+	default_color = '#e1e1e1',-- szary a7a7a7
+	default_outline_color = '#000000',-- Black
+	default_shade_color = '#000000',-- Black
+	double_buffer = true,
+	draw_borders = false,
+	draw_graph_borders = false,
+	draw_outline = false,
+	draw_shades = false,
+	gap_x = 5,
+	gap_y = 40,
+	max_specials = '1024',
+	max_user_text = 10000,
+	maximum_width = 250,
+	minimum_width = 0, minimum_height = 0,
+	net_avg_samples = 2,
+	no_buffers = true,
+	override_utf8_locale = true,
+	own_window = true,
+	own_window_colour = '#000000',
+	own_window_hints = 'undecorated,below,sticky,skip_taskbar,skip_pager',
+	own_window_transparent = true,
+	own_window_type = 'override',--# normal
+	pad_percents = 2,-- to co nizej, miejsc po przecinku
+	short_units = true,-- krotka wersja podawania wielkosci dyskow np. 612.21M/3.80G
+	stippled_borders = 3,
+	text_buffer_size = 8000,
+	total_run_times = 0,
+	update_interval = 1.0,
+	uppercase = false,
+	use_spacer = 'right',
+	use_xft = true,
+	xftalpha = 0.75,
+	font = 'sans:size=12',
+
+--lua_load /home/didisoft/.conky/lua.lua
+
+-- ${diskiograph /dev/sda 15,180 a7a7a7 a7a7a7} # wskaznik pracy dysku
+-- ${image /home/didisoft/.conky/didisoft.jpg -p 0,80 -s 26x28} # obrazki w conky
+
+
+	own_window_argb_value = 0,
+	own_window_argb_visual = false,
+};
+
+conky.text = [[
+${color9}${goto 10}${font DejaVu Sans Mono:size=70}${time %H}${font DejaVu Sans Mono:size=30}${voffset -38}'${time %M}${font DejaVu Sans Mono:size=15}${voffset -17}${time %S}
+${color9}${goto 130}${voffset 10}${font :size=12}${time %A}
+${color9}${goto 130}${voffset -4}${font :size=10}${time %d %B %Y}
+${color}${font DejaVu Sans Mono:size=12}${execpi 3600 DJS=`date +%_d`; cal -m | sed '1d' | sed '/./!d' | sed 's/$/                     /' | fold -w 21 | sed -n '/^.\{21\}/p' | sed 's/^/${alignc} /' | sed /" $DJS "/s/" $DJS "/" "'${color9}'"$DJS"'${color}'" "/}${font}
+]];
