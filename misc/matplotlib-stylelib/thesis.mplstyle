@@ -34,9 +34,15 @@ ytick.minor.size: 3
 
 axes.spines.top     : False
 axes.spines.right   : False
-#xtick.top           : False
-#ytick.right         : False
+xtick.top           : False
+ytick.right         : False
 
 axes.grid.axis      : y
 text.usetex         : False
 
+xtick.labelsize     : 15
+ytick.labelsize     : 15
+axes.labelsize      : 18
+figure.figsize      : 9.6, 7.2
+figure.autolayout   : true
+legend.fontsize     : 11
