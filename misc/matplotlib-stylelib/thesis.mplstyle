@@ -15,6 +15,7 @@ axes.axisbelow: True
 image.cmap: Greys
 font.family: sans-serif
 font.sans-serif: Arial, Liberation Sans, Bitstream Vera Sans, sans-serif
+font.size: 40
 grid.linestyle: -
 lines.solid_capstyle: round
 
