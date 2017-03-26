@@ -39,7 +39,11 @@
     ~/.ncmpcpp: social-media/ncmpcpp
 - shell:
     - mkdir -p ~/.config/mpd/playlist
-    - touch ~/.config/mpd/{database, log, state, pid, sticker.sql}
+    - touch ~/.config/mpd/database
+    - touch ~/.config/mpd/log
+    - touch ~/.config/mpd/state
+    - touch ~/.config/mpd/pid
+    - touch ~/.config/mpd/sticker.sql
     - mkdir -p ~/music
 - link:
     ~/.config/mpd/mpd.conf: social-media/mpd.conf
@@ -53,7 +57,7 @@
     - echo 'Installing Graphical Visuals configs'
     - [mkdir -p ~/.icons, Creating icons directory]
     - [mkdir -p ~/.wallpapers, Creating wallpapers directory]
-    - tar -xJvf window-manager/icons/AnyColorYouLike.txz ~/.icons
+    - tar -xJvf window-manager/icons/AnyColorYouLike.txz -C ~/.icons
 - link:
     ~/.themes: window-manager/openbox-themes
     ~/.config/openbox: window-manager/openbox
