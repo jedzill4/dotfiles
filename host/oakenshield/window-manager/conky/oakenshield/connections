@@ -23,7 +23,7 @@
 ##
 ##..: Conky Window :..
 ##
-alignment top_right
+alignment bottom_right
   #
 minimum_size 0 0
   maximum_width 350                   #Maximun width (px)
@@ -63,6 +63,7 @@ own_window_transparent yes
   color1 D6D6D6                       #Silver
   color2 EFEFEF                       #Pearl white
   color3 A3ADB0                       #Grey
+  color9 A5C80C #525276			# niebiesko-szary
 ##
 ##..: Misc :..
 ##
@@ -72,7 +73,7 @@ own_window_transparent yes
 ##..: Clock and rings :..
 ##-- SET TO YOUR PATH!!! --
 ##
-# lua_load ~/.conky/lua/clock.lua
+#  lua_load ~/.conky/lua/clock.lua
 #  lua_draw_hook_pre clock_rings
 
 
@@ -81,7 +82,12 @@ own_window_argb_visual no
 own_window_colour 000000
 TEXT
 # ..: CLOCK & CALENDAR :..
+${color A5C80C}${voffset 0}${offset 214}${font Nimbus Mono:style=Bold:size=15}CONNECTIONS ${font} 
 ${color d7d7d7}${offset 56}${voffset -1}${cpugraph cpu6 17,1}${voffset -3}${hr 2}${color3}
 
-${voffset -19}${offset 110}${font neuropol:size=20}${time %H:%M}${font}  ${voffset -3}${font Nimbus Mono L:size=9}$uptime
+${voffset 0}${offset 110}${font neuropol:size=8}Mopidy status: ${color A5C80C}${exec systemctl --user status mopidy | grep Active | awk '{print $2}'}${font}  
+#${voffset 0}${offset 110}${font neuropol:size=8}Dropbox status: ${color A5C80C}${exec dropbox-cli status | sed -n '1p' | awk '{print $1}'}${font}  
+${voffset 0}${offset 110}${color}${font neuropol:size=8}Mailbox ${font} 
 ${voffset -5}${offset 110}${cpubar cpu6 0, 200}${voffset 2}${color1}
+${voffset -9}${offset 120}${font neuropol:size=8}Gmail (Personal): ${execpi 60 python ~/.conky/script/gmail1.py}${font neuropol:size=8 style=bold}  mail(s)
+#${voffset 0}${offset 120}${font neuropol:size=8}Gmail (Uchile):${execpi 60 python ~/.conky/script/gmail2.py}${font neuropol:size=8 style=bold}  mail(s)
