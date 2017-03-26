@@ -2,6 +2,7 @@
     link:
         create: true
         relink: true
+        force: true
 
 - clean: ['~','~/.config']
 
@@ -25,7 +26,7 @@
     ~/.vim-plugins.vim: console/vim-plugins.vim
     ~/.vim: console/vim
     ~/.tmux.conf: console/tmux.conf
-    ~/.tmux: console/tmux
+    #    ~/.tmux: console/tmux
     ~/.tmuxinator: console/tmuxinator
 
 # Social & media configs
@@ -36,27 +37,32 @@
     ~/.mutt: social-media/mutt
     ~/.weechat: social-media/weechat
     ~/.ncmpcpp: social-media/ncmpcpp
-    ~/.config/mpd: social-media/mpd
+- shell:
+    - mkdir -p ~/.config/mpd/playlist
+    - touch ~/.config/mpd/{database, log, state, pid, sticker.sql}
+    - mkdir -p ~/music
+- link:
+    ~/.config/mpd/mpd.conf: social-media/mpd.conf
+
+    
+    
 
 
 # Window Manager
 - shell:
     - echo 'Installing Graphical Visuals configs'
+    - [mkdir -p ~/.icons, Creating icons directory]
+    - [mkdir -p ~/.wallpapers, Creating wallpapers directory]
+    - tar -xJvf window-manager/icons/AnyColorYouLike.txz ~/.icons
 - link:
-    ~/.conky: window-manager/conky
-    ~/.wallpapers: window-manager/wallpapers
-    ~/.icons: window-manager/icons
     ~/.themes: window-manager/openbox-themes
     ~/.config/openbox: window-manager/openbox
-    ~/.config/nitrogen: window-manager/nitrogen
 
 # Misc configs
 - shell:
     - echo 'Installing misc configurations'
     - [mkdir -p ~/.config/matplotlib, Creating matplotlib folder]
-    - [mkdir -p ~/.kde4/share/app/okular/docdata, Creating okular-docdata folder]
 - link:
-    ~/.kde4/share/apps/okular/docdata: misc/okular-docdata 
     ~/.config/matplotlib/stylelib: misc/matplotlib-stylelib/ 
     ~/.fonts: misc/fonts
 
