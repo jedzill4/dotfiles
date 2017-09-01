@@ -1,0 +1,33 @@
+session_name: corn
+start_directory: ${PHD_DIR}/corn
+windows:
+- panes:
+  - tmux link-window -dk -s default:social -t corn:social; null
+  - null
+  window_name: social
+- layout: main-vertical
+  panes:
+  - null
+  - null
+  window_name: default
+- layout: 20a0,274x83,0,0{137x83,0,0,3,136x83,138,0[136x41,138,0,5,136x41,138,42,6]}
+  panes:
+  - null
+  - shell_command: git pull
+  - shell_command: ls
+  start_directory: ${PHD_DIR}/corn/database
+  window_name: corn-db
+- layout: 20a0,274x83,0,0{137x83,0,0,3,136x83,138,0[136x41,138,0,5,136x41,138,42,6]}
+  panes:
+  - null
+  - shell_command: git pull
+  - shell_command: ls
+  start_directory: ${PHD_DIR}/corn/src
+  window_name: corn-src
+- layout: 20a0,274x83,0,0{137x83,0,0,3,136x83,138,0[136x41,138,0,5,136x41,138,42,6]}
+  panes:
+  - null
+  - shell_command: git pull
+  - shell_command: ls
+  start_directory: ${PHD_DIR}/corn/doc
+  window_name: corn-doc

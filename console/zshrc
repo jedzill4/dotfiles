@@ -12,6 +12,9 @@ else;
 fi
 
 
+#eval "$(_TMUXP_COMPLETE=source tmuxp)"
+
+
 # Created by newuser for 5.1.1
 pdfmerge() { gs -dBATCH -dNOPAUSE -q -sDEVICE=pdfwrite -dPDFSETTINGS=/prepress -sOutputFile=$@ ; }
 
@@ -25,9 +28,6 @@ okular() {/bin/nohup /bin/okular $@ 2> /dev/null > /dev/null &;}
 
 zathura-stdout() {/bin/zathura $@;}
 zathura() {/bin/nohup /bin/zathura $@ 2> /dev/null > /dev/null &;}
-
-mathematica-stdout() {/usr/local/Wolfram/Mathematica/10.0/Executables/mathematica $@;}
-mathematica() {/bin/nohup /usr/local/Wolfram/Mathematica/10.0/Executables/mathematica $@ 2> /dev/null > /dev/null &;}
 
 sigil-stdout() {/bin/sigil $@;}
 sigil() {/bin/nohup /bin/sigil $@ 2> /dev/null > /dev/null &;}
@@ -65,18 +65,21 @@ atlauncher() {nohup atlauncher > /dev/null 2> /dev/null &}
 
 
 
-## HASH
+## HASH and VARS
 
-hash -d aproxmulti-src=$HOME/doctorado/aproxmulti/source
-hash -d aproxmulti-doc=$HOME/doctorado/aproxmulti/apuntes
+alias mux="tmuxp load"
+export PHD_DIR=~/doctorado
 
-hash -d corn=$HOME/doctorado/corn
-hash -d corn-db=$HOME/doctorado/corn/database
-hash -d corn-src=$HOME/doctorado/corn/src
-hash -d corn-doc=$HOME/doctorado/corn/doc
+hash -d aproxmulti-src=$PHD_DIR/aproxmulti/source
+hash -d aproxmulti-doc=$PHD_DIR/aproxmulti/apuntes
 
-hash -d expos=$HOME/doctorado/expos
+hash -d corn=$PHD_DIR/corn
+hash -d corn-db=$PHD_DIR/corn/database
+hash -d corn-src=$PHD_DIR/corn/src
+hash -d corn-doc=$PHD_DIR/corn/doc
+
+hash -d expos=$PHD_DIR/expos
 hash -d datos=$HOME/datos
-hash -d cursos=$HOME/doctorado/cursos
+hash -d cursos=$PHD_DIR/cursos
 
 

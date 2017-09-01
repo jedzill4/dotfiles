@@ -1,6 +1,9 @@
 - pacaur:
     - zsh
+    - git
     - termite
     - mpd
     - ncmpcpp
+    - tmux
+    - tmuxp
     

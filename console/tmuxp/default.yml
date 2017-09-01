@@ -1,0 +1,14 @@
+session_name: default
+start_directory: ~/
+windows:
+- layout: 9a9d,274x70,0,0[274x53,0,0{137x53,0,0,9,136x53,138,0,13},274x16,0,54,11]
+  panes:
+  - weechat
+  - null
+  - null
+  window_name: social
+- layout: 20a0,274x83,0,0{137x83,0,0,3,136x83,138,0[136x41,138,0,5,136x41,138,42,6]}
+  panes:
+  - null
+  - null
+  window_name: default
