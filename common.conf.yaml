@@ -57,10 +57,13 @@
     - echo 'Installing Graphical Visuals configs'
     - [mkdir -p ~/.icons, Creating icons directory]
     - [mkdir -p ~/.wallpapers, Creating wallpapers directory]
+    - mkdir -p ~/.config/openbox
     - tar -xJvf window-manager/icons/AnyColorYouLike.txz -C ~/.icons
 - link:
     ~/.themes: window-manager/openbox-themes
-    ~/.config/openbox: window-manager/openbox
+    ~/.config/openbox/autostart: window-manager/openbox/autostart
+    ~/.config/openbox/menu.xml: window-manager/openbox/menu.xml
+    ~/.config/openbox/rc.xml: window-manager/openbox/rc.xml
 
 # Misc configs
 - shell:

@@ -1,0 +1,28 @@
+- defaults:
+    link:
+        create: true
+        relink: true
+        force: true
+
+
+
+# Console configuration
+- shell:
+    - echo 'Installing console configuration'
+    
+- link:
+    ~/.zshrc-oakenshield: host/oakenshield/console/zshrc
+    ~/.tmux.design: host/oakenshield/console/tmux-design.conf
+
+
+# Window Manager
+- shell:
+    - echo 'Installing Graphical Visuals configs'
+    - [mkdir -p ~/.conky/, Creating termite config file]
+- link:
+    ~/.conky/config: host/oakenshield/window-manager/conky/oakenshield
+
+
+
+
+

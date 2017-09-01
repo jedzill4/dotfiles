@@ -20,9 +20,11 @@ nitrogen --restore &
 
 
 conky -c /home/rbarriga/.conky/config/cal &
-conky -c /home/rbarriga/.conky/config/todo &
-conky -c /home/rbarriga/.conky/config/connections &
 conky -c /home/rbarriga/.conky/config/system &
 conky -c /home/rbarriga/.conky/config/cpu &
 conky -c /home/rbarriga/.conky/config/network &
 conky -c /home/rbarriga/.conky/config/memory &
+tint2 &
+onboard  &
+
+

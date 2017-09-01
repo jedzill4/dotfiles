@@ -1,0 +1,119 @@
+conky.config = {
+--# Conky by Ninquitassar (2012)
+--# my deviantart: http://ninquitassar.deviantart.com/
+--# special thanks to Iacoporosso
+--#..: Conky status :..
+--#
+	total_run_times = 0,--Time in seconds; 0 = ever
+	background = false,--No fork in background
+--#
+--#..: System Settings :..
+--#
+	cpu_avg_samples = 1,--The number of samples to average for CPU monitoring
+	net_avg_samples = 2,--The number of samples to average for net data 
+--#
+--#..: Memory :..
+--#
+	double_buffer = true,--eliminates flicker
+	no_buffers = true,--Subtract (file system) buffers from used memory?
+	text_buffer_size = 1024,--Textual buffer memory
+--#
+--#..: Display :..
+	out_to_console = false,--Print text to stdout
+	update_interval = 1,--Update interval
+--#
+--#..: Conky Window :..
+--#
+	alignment = 'middle_left',
+
+	minimum_width = 360, minimum_height = 0,
+	maximum_width = 900,--Maximun width (px)
+	border_margin = '6',
+
+	gap_x = -1,
+	gap_y = 170,
+
+	draw_shades = false,--Draw shadows?
+	draw_outline = false,--Draw outline?
+	draw_borders = false,--Borders to the text?
+	border_width = 1,--Width of borders
+	border_inner_margin = 1,--Width of margins
+
+	own_window = true,--Create own window to draw
+	own_window_type = 'override',--Type of window
+	own_window_transparent = true,
+--#
+--#..: Format :..
+--#
+	use_xft = true,--Use Xft
+	xftalpha = .1,--Alpha of Xft
+	override_utf8_locale = true,--UTF8 forcing
+	uppercase = false,--Only capital letters
+	use_spacer = 'right',--Adds spaces around certain objects to stop them from moving other things around
+
+	font = 'saxMono:size=9',--Default font
+
+	default_bar_width = 92, default_bar_height = 3,--Specify a default width and height for bars
+	stippled_borders = 3,--Border dashing
+--#
+--#..: Colors :..
+--#
+	default_color = '#FFFFFF',--Default color
+	default_shade_color = '#333333',--Default color for shadows
+	default_outline_color = 'black',--Default border color
+
+	color1 = '#D6D6D6',--Silver
+	color2 = '#EFEFEF',--Pearl white
+	color3 = '#A3ADB0',--Grey
+	color9 = '#A5C80C',--Cian
+--#
+--#..: Misc :..
+--#
+	short_units = true,--Shortens units to a single character
+	pad_percents = 2,--Number of decimals
+--#
+--#..: Clock and rings :..
+--#-- SET TO YOUR PATH!!! --
+--#
+--  lua_load ~/.conky/lua/clock.lua
+--  lua_draw_hook_pre clock_rings
+
+--lua_load ~/.conky/bargraph_small.lua
+--lua_draw_hook_post main_bars
+
+	own_window_argb_value = 0,
+	own_window_argb_visual = false,
+	own_window_colour = '#000000',
+};
+
+conky.text = [[
+# ..: CPU  :..
+${color9}${voffset 0}${offset 4}${font Droid Sans Mono:style=Bold:size=15}SYSTEM ${font} 
+${color1}${offset 0}${voffset -3}${hr 2}${offset 0}${voffset 3}${cpugraph cpu6 17,1}
+${color9}${voffset -10}${offset 4}${font Droid Sans Mono:style=Bold:size=13}CPU:${font} ${voffset 0}${font Droid Sans Mono:size=10}${exec echo $(cat /proc/cpuinfo |grep "model name"|tail -1 |awk '{print $4" "$5}')}${font}${color} $alignr ${offset -5} ${exec sensors | grep Physical |tail -1 | awk '{print $4}'|sed -e s/+//g}
+#${color1}${offset 0}${voffset -3}${hr 2}${offset 0}${voffset 3}${cpugraph cpu6 17,1}
+#${color9}${voffset -25}${offset 4}${font Droid Sans Mono:style=Bold:size=12}CPU${font}: ${exec echo $(cat /proc/cpuinfo |grep "model name"|tail -1 |awk '{print $4" "$5}')}
+
+${offset 10}${voffset -09}${color}CPU 1:  ${cpu cpu1}% $alignr ${offset -10}${exec cpupower -c 0 frequency-info |grep frequency |tail -1 | awk '{print $4" "$5}'    }
+${offset 10}${color}CPU 2:  ${cpu cpu2}% $alignr ${offset -10}${exec cpupower -c 1 frequency-info |grep frequency |tail -1 | awk '{print $4" "$5}'    }
+${offset 10}${color}CPU 3:  ${cpu cpu3}% $alignr ${offset -10}${exec cpupower -c 2 frequency-info |grep frequency |tail -1 | awk '{print $4" "$5}'    }
+${offset 10}${color}CPU 4:  ${cpu cpu4}% $alignr ${offset -10}${exec cpupower -c 3 frequency-info |grep frequency |tail -1 | awk '{print $4" "$5}'    }
+${offset 10}${color}CPU 5:  ${cpu cpu4}% $alignr ${offset -10}${exec cpupower -c 4 frequency-info |grep frequency |tail -1 | awk '{print $4" "$5}'    }
+${offset 10}${color}CPU 6:  ${cpu cpu4}% $alignr ${offset -10}${exec cpupower -c 5 frequency-info |grep frequency |tail -1 | awk '{print $4" "$5}'    }
+${offset 10}${color}CPU 7:  ${cpu cpu4}% $alignr ${offset -10}${exec cpupower -c 6 frequency-info |grep frequency |tail -1 | awk '{print $4" "$5}'    }
+${offset 10}${color}CPU 8:  ${cpu cpu4}% $alignr ${offset -10}${exec cpupower -c 7 frequency-info |grep frequency |tail -1 | awk '{print $4" "$5}'    }
+
+#${color9}${voffset 0}${offset 4}${font Droid Sans Mono:style=Bold:size=13}GPU:${font} ${voffset 0}${font Nimbus Mono:size=10}${exec lshw -short |grep display |awk 'BEGIN { FS="[" } ; {print $2}' | sed -e s/]//g } ${font}$color$alignr ${offset -10}${exec aticonfig --odgt | grep Temperature |awk '{print $5}'}C
+
+#${offset 10}${voffset -8}${color}GPU:  ${exec aticonfig --odgc |grep load |awk '{print $4}'} $alignr ${offset -10}${exec aticonfig --odgc | grep Clocks | awk '{print $4}' } MHz 
+#${offset 10}${voffset 0}${color}VRam: $alignr ${offset -10}${exec aticonfig --odgc | grep Clocks | awk '{print $5}' } MHz 
+
+
+
+${voffset -7}${color9}${font}NAME ${goto 90}PID${goto 120}CPU% ${alignr}MEM%
+${color}${font :size=7}${goto 9}${top name 1}${goto 85}${top pid 1}${goto 120}${top cpu 1}${alignr}${top mem 1}
+${color}${font :size=7}${goto 9}${top name 2}${goto 85}${top pid 2}${goto 120}${top cpu 2}${alignr}${top mem 2}
+${color}${font :size=7}${goto 9}${top name 3}${goto 85}${top pid 3}${goto 120}${top cpu 3}${alignr}${top mem 4}
+${color}${font :size=7}${goto 9}${top name 4}${goto 85}${top pid 4}${goto 120}${top cpu 4}${alignr}${top mem 5}
+${color}${font :size=6}${goto 9}${top name 5}${goto 85}${top pid 5}${goto 120}${top cpu 5}${alignr}${top mem 6}
+]];
