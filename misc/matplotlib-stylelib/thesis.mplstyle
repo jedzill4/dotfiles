@@ -12,7 +12,7 @@ ytick.direction: out
 xtick.color: .15
 ytick.color: .15
 axes.axisbelow: True
-image.cmap: Greys
+image.cmap: tab10
 font.family: sans-serif
 font.sans-serif: Arial, Liberation Sans, Bitstream Vera Sans, sans-serif
 font.size: 40

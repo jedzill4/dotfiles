@@ -28,6 +28,10 @@ Bundle 'https://github.com/sickill/vim-monokai'
 Bundle 'https://github.com/jedzill4/vim-kalisi'  
 Bundle 'https://github.com/fweep/vim-zsh-path-completion'
 Bundle 'https://github.com/chrisbra/vim-zsh'
+Plugin 'vim-pandoc/vim-pandoc-syntax'
+Plugin 'vim-pandoc/vim-pandoc'
+Bundle 'lervag/vimtex'
+
 
 filetype plugin indent on     " required! 
 "
@@ -39,3 +43,7 @@ filetype plugin indent on     " required!
 "
 " see :h vundle for more details or wiki for FAQ
 " NOTE: comments after Bundle command are not allowed..
+"
+
+"VIMTEX
+let g:tex_fold_enabled = 1

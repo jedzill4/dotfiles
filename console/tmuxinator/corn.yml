@@ -1,5 +1,5 @@
 name: corn
-root: /home/rbarriga/doctorado/corn
+root: /home/rbarriga/phd/corn
 windows:
     - social:
         panes:
@@ -11,21 +11,28 @@ windows:
             - clear 
             - clear
     - corn-db:
-        root: ~/doctorado/corn/database
+        root: ~/phd/corn/database
         layout: 20a0,274x83,0,0{137x83,0,0,3,136x83,138,0[136x41,138,0,5,136x41,138,42,6]}
         panes:
             - clear
             - git pull
             - ls
     - corn-src:
-        root: ~/doctorado/corn/src
+        root: ~/phd/corn/src
         layout: 20a0,274x83,0,0{137x83,0,0,3,136x83,138,0[136x41,138,0,5,136x41,138,42,6]}
         panes:
             - clear
             - git pull
             - ls
     - corn-doc:
-        root: ~/doctorado/corn/doc
+        root: ~/phd/corn/doc
+        layout: 20a0,274x83,0,0{137x83,0,0,3,136x83,138,0[136x41,138,0,5,136x41,138,42,6]}
+        panes:
+            - clear
+            - git pull
+            - ls
+    - corn-sim:
+        root: ~/phd/corn/sim-analysis/model-selection
         layout: 20a0,274x83,0,0{137x83,0,0,3,136x83,138,0[136x41,138,0,5,136x41,138,42,6]}
         panes:
             - clear

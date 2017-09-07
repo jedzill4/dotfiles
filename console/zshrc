@@ -1,6 +1,9 @@
-source ~/.zplugrc
 source ~/.zshrc-$HOST
 
+# Source Prezto.
+if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
+  source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
+fi
 
 if [[ -n $TMUX ]]; then
     zstyle ':prompt:grml:left:setup' items rc change-root path percent    
@@ -10,13 +13,16 @@ else;
     zstyle ':prompt:grml:left:setup' items rc change-root user at host path   vcs percent 
     zstyle ':prompt:grml:right:setup' items sad-smiley
 fi
+setopt clobber
 
 
 # Created by newuser for 5.1.1
-pdfmerge() { gs -dBATCH -dNOPAUSE -q -sDEVICE=pdfwrite -dPDFSETTINGS=/prepress -sOutputFile=$@ ; }
+pdfmerge() { /usr/bin/gs -dBATCH -dNOPAUSE -q -sDEVICE=pdfwrite -dPDFSETTINGS=/prepress -sOutputFile=$@ ; }
 
 
 ## ALIAS
+
+alias mux=tmuxinator
 
 function mdview { pandoc "$1" -f markdown -t html | lynx -stdin;}
 
@@ -67,16 +73,16 @@ atlauncher() {nohup atlauncher > /dev/null 2> /dev/null &}
 
 ## HASH
 
-hash -d aproxmulti-src=$HOME/doctorado/aproxmulti/source
-hash -d aproxmulti-doc=$HOME/doctorado/aproxmulti/apuntes
+hash -d aproxmulti-src=$HOME/$PHD_DIR/aproxmulti/source
+hash -d aproxmulti-doc=$HOME/$PHD_DIR/aproxmulti/apuntes
 
-hash -d corn=$HOME/doctorado/corn
-hash -d corn-db=$HOME/doctorado/corn/database
-hash -d corn-src=$HOME/doctorado/corn/src
-hash -d corn-doc=$HOME/doctorado/corn/doc
+hash -d corn=$HOME/$PHD_DIR/corn
+hash -d corn-db=$HOME/$PHD_DIR/corn/database
+hash -d corn-src=$HOME/$PHD_DIR/corn/src
+hash -d corn-doc=$HOME/$PHD_DIR/corn/doc
 
-hash -d expos=$HOME/doctorado/expos
+hash -d expos=$HOME/$PHD_DIR/expos
 hash -d datos=$HOME/datos
-hash -d cursos=$HOME/doctorado/cursos
+hash -d cursos=$HOME/$PHD_DIR/cursos
 
 

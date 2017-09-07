@@ -1,3 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =1
+let g:netrw_dirhist_cnt =3
 let g:netrw_dirhist_1='/home/rbarriga/Dropbox/UBA/Fis_Computacional/percolacion/schemes/ns'
+let g:netrw_dirhist_2='/home/rbarriga/phd/corn/src/src/corn-001d'
+let g:netrw_dirhist_3='/home/rbarriga/phd/corn/sim-analysis/model-selection/configs'
