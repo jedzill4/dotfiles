@@ -1,4 +1,3 @@
-<?xml version="1.0"?>
 <openbox_config xmlns="http://openbox.org/3.4/rc" xmlns:xi="http://www.w3.org/2001/XInclude">
   <resistance>
     <strength>10</strength>
@@ -176,6 +175,26 @@
     <keybind key="C-A-Left">
       <action name="GoToDesktop"/>
     </keybind>
+    <keybind key="S-W-Return">
+      <action name="Execute">
+        <command>mpc toggle</command>
+      </action>
+    </keybind>
+    <keybind key="S-W-BackSpace">
+      <action name="Execute">
+        <command>mpc stop</command>
+      </action>
+    </keybind>
+    <keybind key="S-W-less">
+      <action name="Execute">
+        <command>mpc prev</command>
+      </action>
+    </keybind>
+    <keybind key="S-W-greater">
+      <action name="Execute">
+        <command>mpc next</command>
+      </action>
+    </keybind>
     <keybind key="C-A-U">
       <action name="ShowMenu">
         <menu>menu</menu>
@@ -192,18 +211,56 @@
       </action>
     </keybind>
     <keybind key="A-1">
-      <action name="MaximizeVert"/>
       <action name="MoveResizeTo">
         <x>0</x>
-        <width>1/2</width>
+        <y>0</y>
+        <width>1/1</width>
+        <height>1/1</height>
       </action>
     </keybind>
     <keybind key="A-2">
-      <action name="MaximizeVert"/>
+      <action name="MoveResizeTo">
+        <y>0</y>
+        <width>1/2</width>
+        <height>1/1</height>
+      </action>
+    </keybind>
+    <keybind key="A-3">
+      <action name="MoveResizeTo">
+        <y>0</y>
+        <width>1/3</width>
+        <height>1/1</height>
+      </action>
+    </keybind>
+    <keybind key="A-4">
+      <action name="MoveResizeTo">
+        <width>1/2</width>
+        <height>1/2</height>
+      </action>
+    </keybind>
+    <keybind key="A-grave">
       <action name="MoveResizeTo">
         <x>1/2</x>
+        <y>1/2</y>
         <width>1/2</width>
+        <height>1/2</height>
       </action>
+      <action name="MoveToCenter"/>
+    </keybind>
+    <keybind key="A-l">
+      <action name="MoveToEdgeEast"/>
+    </keybind>
+    <keybind key="A-h">
+      <action name="MoveToEdgeWest"/>
+    </keybind>
+    <keybind key="A-j">
+      <action name="MoveToEdgeSouth"/>
+    </keybind>
+    <keybind key="A-k">
+      <action name="MoveToEdgeNorth"/>
+    </keybind>
+    <keybind key="W-2">
+      <action name="MoveToEdgeEast"/>
     </keybind>
     <keybind key="S-W-u">
       <action name="ToggleDecorations"/>
@@ -252,17 +309,17 @@
     </keybind>
     <keybind key="XF86AudioRaiseVolume">
       <action name="Execute">
-        <command>amixer set PCM 5%+ unmute</command>
+        <command>amixer set Master 5%+ unmute</command>
       </action>
     </keybind>
     <keybind key="XF86AudioLowerVolume">
       <action name="Execute">
-        <command>amixer set PCM 5%- unmute</command>
+        <command>amixer set Master 5%- unmute</command>
       </action>
     </keybind>
     <keybind key="XF86AudioMute">
       <action name="Execute">
-        <command>amixer set PCM toggle</command>
+        <command>amixer set Master toggle</command>
       </action>
     </keybind>
     <keybind key="C-A-p">
@@ -311,16 +368,24 @@
       <action name="GoToDesktop"/>
     </keybind>
     <keybind key="S-A-Left">
-      <action name="SendToDesktop"/>
+      <action name="SendToDesktop">
+        <desktop>1</desktop>
+      </action>
     </keybind>
     <keybind key="S-A-Right">
-      <action name="SendToDesktop"/>
+      <action name="SendToDesktop">
+        <desktop>1</desktop>
+      </action>
     </keybind>
     <keybind key="S-A-Up">
-      <action name="SendToDesktop"/>
+      <action name="SendToDesktop">
+        <desktop>1</desktop>
+      </action>
     </keybind>
     <keybind key="S-A-Down">
-      <action name="SendToDesktop"/>
+      <action name="SendToDesktop">
+        <desktop>1</desktop>
+      </action>
     </keybind>
     <keybind key="W-F1">
       <action name="GoToDesktop"/>
