@@ -1,5 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_cnt =4
 let g:netrw_dirhist_1='/home/rbarriga/Dropbox/UBA/Fis_Computacional/percolacion/schemes/ns'
 let g:netrw_dirhist_2='/home/rbarriga/git-clones/surface-tools/autorotate'
 let g:netrw_dirhist_3='/home/rbarriga/git-clones/surface-tools/palmreject'
+let g:netrw_dirhist_4='/home/rbarriga/docs/Radex/radex_verificacion'

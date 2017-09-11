@@ -21,7 +21,12 @@ pdfmerge() { gs -dBATCH -dNOPAUSE -q -sDEVICE=pdfwrite -dPDFSETTINGS=/prepress -
 
 ## ALIAS
 
+trans() {/usr/local/bin/trans $@;}
+
 function mdview { pandoc "$1" -f markdown -t html | lynx -stdin;}
+
+surf-stdout() {/bin/surf $@;}
+surf() {/bin/nohup /bin/surf $@ 2> /dev/null > /dev/null &;}
 
 okular-stdout() {/bin/okular $@;}
 okular() {/bin/nohup /bin/okular $@ 2> /dev/null > /dev/null &;}
@@ -68,7 +73,7 @@ atlauncher() {nohup atlauncher > /dev/null 2> /dev/null &}
 ## HASH and VARS
 
 alias mux="tmuxp load"
-export PHD_DIR=~/doctorado
+export PHD_DIR=~/phd
 
 hash -d aproxmulti-src=$PHD_DIR/aproxmulti/source
 hash -d aproxmulti-doc=$PHD_DIR/aproxmulti/apuntes
@@ -77,6 +82,11 @@ hash -d corn=$PHD_DIR/corn
 hash -d corn-db=$PHD_DIR/corn/database
 hash -d corn-src=$PHD_DIR/corn/src
 hash -d corn-doc=$PHD_DIR/corn/doc
+
+hash -d dalbulus=$PHD_DIR/dalbulus
+hash -d dalbulus-db=$PHD_DIR/dalbulus/database
+hash -d dalbulus-src=$PHD_DIR/dalbulus/src
+hash -d dalbulus-doc=$PHD_DIR/dalbulus/doc
 
 hash -d expos=$PHD_DIR/expos
 hash -d datos=$HOME/datos

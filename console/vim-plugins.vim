@@ -28,6 +28,7 @@ Bundle 'https://github.com/sickill/vim-monokai'
 Bundle 'https://github.com/jedzill4/vim-kalisi'  
 Bundle 'https://github.com/fweep/vim-zsh-path-completion'
 Bundle 'https://github.com/chrisbra/vim-zsh'
+Bundle 'https://github.com/vim-scripts/rest.vim'
 
 filetype plugin indent on     " required! 
 "
