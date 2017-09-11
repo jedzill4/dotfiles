@@ -1,0 +1,4 @@
+
+mathematica-stdout() {/usr/local/Wolfram/Mathematica/9.0/Executables/mathematica $@;}
+mathematica() {/bin/nohup /usr/local/Wolfram/Mathematica/9.0/Executables/mathematica $@ 2> /dev/null > /dev/null &;}
+

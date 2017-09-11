@@ -28,8 +28,9 @@ Bundle 'https://github.com/sickill/vim-monokai'
 Bundle 'https://github.com/jedzill4/vim-kalisi'  
 Bundle 'https://github.com/fweep/vim-zsh-path-completion'
 Bundle 'https://github.com/chrisbra/vim-zsh'
-Plugin 'vim-pandoc/vim-pandoc-syntax'
-Plugin 'vim-pandoc/vim-pandoc'
+Bundle 'vim-pandoc/vim-pandoc-syntax'
+Bundle 'vim-pandoc/vim-pandoc'
+Bundle 'https://github.com/vim-scripts/rest.vim'
 Bundle 'lervag/vimtex'
 
 

@@ -1,0 +1,13 @@
+session_name: aproxmulti
+start_directory: ${PHD_DIR}/aproxmulti/source/
+windows:
+- panes:
+  - tmux link-window -dk -s default:social -t aproxmulti:social; clear
+  - clear
+  window_name: social
+- layout: 20a0,274x83,0,0{137x83,0,0,3,136x83,138,0[136x41,138,0,5,136x41,138,42,6]}
+  panes:
+  - clear
+  - git pull
+  - ls
+  window_name: src

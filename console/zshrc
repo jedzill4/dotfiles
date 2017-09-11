@@ -16,24 +16,27 @@ fi
 setopt clobber
 
 
+#eval "$(_TMUXP_COMPLETE=source tmuxp)"
+
+
 # Created by newuser for 5.1.1
 pdfmerge() { /usr/bin/gs -dBATCH -dNOPAUSE -q -sDEVICE=pdfwrite -dPDFSETTINGS=/prepress -sOutputFile=$@ ; }
 
 
 ## ALIAS
 
-alias mux=tmuxinator
+trans() {/usr/local/bin/trans $@;}
 
 function mdview { pandoc "$1" -f markdown -t html | lynx -stdin;}
+
+surf-stdout() {/bin/surf $@;}
+surf() {/bin/nohup /bin/surf $@ 2> /dev/null > /dev/null &;}
 
 okular-stdout() {/bin/okular $@;}
 okular() {/bin/nohup /bin/okular $@ 2> /dev/null > /dev/null &;}
 
 zathura-stdout() {/bin/zathura $@;}
 zathura() {/bin/nohup /bin/zathura $@ 2> /dev/null > /dev/null &;}
-
-mathematica-stdout() {/usr/local/Wolfram/Mathematica/10.0/Executables/mathematica $@;}
-mathematica() {/bin/nohup /usr/local/Wolfram/Mathematica/10.0/Executables/mathematica $@ 2> /dev/null > /dev/null &;}
 
 sigil-stdout() {/bin/sigil $@;}
 sigil() {/bin/nohup /bin/sigil $@ 2> /dev/null > /dev/null &;}
@@ -71,18 +74,26 @@ atlauncher() {nohup atlauncher > /dev/null 2> /dev/null &}
 
 
 
-## HASH
+## HASH and VARS
 
-hash -d aproxmulti-src=$HOME/$PHD_DIR/aproxmulti/source
-hash -d aproxmulti-doc=$HOME/$PHD_DIR/aproxmulti/apuntes
+alias mux="tmuxp load"
+export PHD_DIR=~/phd
 
-hash -d corn=$HOME/$PHD_DIR/corn
-hash -d corn-db=$HOME/$PHD_DIR/corn/database
-hash -d corn-src=$HOME/$PHD_DIR/corn/src
-hash -d corn-doc=$HOME/$PHD_DIR/corn/doc
+hash -d aproxmulti-src=$PHD_DIR/aproxmulti/source
+hash -d aproxmulti-doc=$PHD_DIR/aproxmulti/apuntes
 
-hash -d expos=$HOME/$PHD_DIR/expos
+hash -d corn=$PHD_DIR/corn
+hash -d corn-db=$PHD_DIR/corn/database
+hash -d corn-src=$PHD_DIR/corn/src
+hash -d corn-doc=$PHD_DIR/corn/doc
+
+hash -d dalbulus=$PHD_DIR/dalbulus
+hash -d dalbulus-db=$PHD_DIR/dalbulus/database
+hash -d dalbulus-src=$PHD_DIR/dalbulus/src
+hash -d dalbulus-doc=$PHD_DIR/dalbulus/doc
+
+hash -d expos=$PHD_DIR/expos
 hash -d datos=$HOME/datos
-hash -d cursos=$HOME/$PHD_DIR/cursos
+hash -d cursos=$PHD_DIR/cursos
 
 

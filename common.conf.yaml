@@ -27,7 +27,7 @@
     ~/.vim: console/vim
     ~/.tmux.conf: console/tmux.conf
     #    ~/.tmux: console/tmux
-    ~/.tmuxinator: console/tmuxinator
+    ~/.tmuxp: console/tmuxp
 
 # Social & media configs
 - shell:
