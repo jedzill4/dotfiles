@@ -2,6 +2,9 @@ source ~/.vim-plugins.vim
 set nu
 syntax on
 set shiftwidth=4 ts=4
+set textwidth=79
+set fo+=t
+set fo-=l
 set smartindent expandtab
 set t_Co=256
 " in case t_Co alone doesn't work, add this as well:
