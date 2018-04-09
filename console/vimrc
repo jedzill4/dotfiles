@@ -20,7 +20,8 @@ set background=dark
 
 " vundle config file
 
-colorscheme kalisi
+"colorscheme kalisi
+colorscheme gruvbox
 "  C/C++ autocommands
     augroup vimrc_c
         autocmd!

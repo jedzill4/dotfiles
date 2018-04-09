@@ -1,6 +1,10 @@
 name: corn
+<<<<<<< HEAD
+root: /home/rbarriga/phd/corn
+=======
 root: <%= ENV["PHD_DIR"] %>/corn
 #pre_window: rbenv shell 2.0.0-p247
+>>>>>>> 7fd7306ebf6d6b586fd38db166d49e1e293aa102
 windows:
     - social:
         panes:
@@ -12,21 +16,40 @@ windows:
             - clear 
             - clear
     - corn-db:
+<<<<<<< HEAD
+        root: ~/phd/corn/database
+=======
         root: $PHD_DIR/corn/database
+>>>>>>> 7fd7306ebf6d6b586fd38db166d49e1e293aa102
         layout: 20a0,274x83,0,0{137x83,0,0,3,136x83,138,0[136x41,138,0,5,136x41,138,42,6]}
         panes:
             - clear
             - git pull
             - ls
     - corn-src:
+<<<<<<< HEAD
+        root: ~/phd/corn/src
+=======
         root: $PHD_DIR/corn/src
+>>>>>>> 7fd7306ebf6d6b586fd38db166d49e1e293aa102
         layout: 20a0,274x83,0,0{137x83,0,0,3,136x83,138,0[136x41,138,0,5,136x41,138,42,6]}
         panes:
             - clear
             - git pull
             - ls
     - corn-doc:
+<<<<<<< HEAD
+        root: ~/phd/corn/doc
+        layout: 20a0,274x83,0,0{137x83,0,0,3,136x83,138,0[136x41,138,0,5,136x41,138,42,6]}
+        panes:
+            - clear
+            - git pull
+            - ls
+    - corn-sim:
+        root: ~/phd/corn/sim-analysis/model-selection
+=======
         root: $PHD_DIR/corn/doc
+>>>>>>> 7fd7306ebf6d6b586fd38db166d49e1e293aa102
         layout: 20a0,274x83,0,0{137x83,0,0,3,136x83,138,0[136x41,138,0,5,136x41,138,42,6]}
         panes:
             - clear

@@ -1,0 +1,13 @@
+PHD_DIR=phd
+# TensorFlow / ComputeCpp
+
+export TF_NEED_OPENCL=1
+export HOST_CXX_COMPILER=/usr/bin/clang++
+export HOST_C_COMPILER=/usr/bin/clang
+export COMPUTECPP_TOOLKIT_PATH=/usr/local/computecpp
+export COMPUTE=:0
+
+export TASKDDATA=/var/lib/taskd
+export GITCLONES=~/Extended_disk/git_clones
+
+alias tasksync=python2 $GITCLONES/trellowarrior/trellowarrior.py ~/.task/trellowarrior.conf

@@ -1,6 +1,13 @@
 let g:netrw_dirhistmax  =10
+<<<<<<< HEAD
+let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_1='/home/rbarriga/Dropbox/UBA/Fis_Computacional/percolacion/schemes/ns'
+let g:netrw_dirhist_2='/home/rbarriga/phd/corn/src/src/corn-001d'
+let g:netrw_dirhist_3='/home/rbarriga/phd/corn/sim-analysis/model-selection/configs'
+=======
 let g:netrw_dirhist_cnt =4
 let g:netrw_dirhist_1='/home/rbarriga/Dropbox/UBA/Fis_Computacional/percolacion/schemes/ns'
 let g:netrw_dirhist_2='/home/rbarriga/git-clones/surface-tools/autorotate'
 let g:netrw_dirhist_3='/home/rbarriga/git-clones/surface-tools/palmreject'
 let g:netrw_dirhist_4='/home/rbarriga/docs/Radex/radex_verificacion'
+>>>>>>> 7fd7306ebf6d6b586fd38db166d49e1e293aa102

@@ -1,6 +1,12 @@
-source ~/.zplugrc
 source ~/.zshrc-$HOST
 
+export BROWSER=vivaldi-stable
+export EDITOR=vim
+
+# Source Prezto.
+if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
+  source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
+fi
 
 if [[ -n $TMUX ]]; then
     zstyle ':prompt:grml:left:setup' items rc change-root path percent    
@@ -10,13 +16,14 @@ else;
     zstyle ':prompt:grml:left:setup' items rc change-root user at host path   vcs percent 
     zstyle ':prompt:grml:right:setup' items sad-smiley
 fi
+setopt clobber
 
 
 #eval "$(_TMUXP_COMPLETE=source tmuxp)"
 
 
 # Created by newuser for 5.1.1
-pdfmerge() { gs -dBATCH -dNOPAUSE -q -sDEVICE=pdfwrite -dPDFSETTINGS=/prepress -sOutputFile=$@ ; }
+pdfmerge() { /usr/bin/gs -dBATCH -dNOPAUSE -q -sDEVICE=pdfwrite -dPDFSETTINGS=/prepress -sOutputFile=$@ ; }
 
 
 ## ALIAS
@@ -93,3 +100,9 @@ hash -d datos=$HOME/datos
 hash -d cursos=$PHD_DIR/cursos
 
 
+
+# TASKWARRIOR
+export TRELLO_API_KEY="468f2bd745e2db8ee4588a2d00d27322"
+export TRELLO_API_SECRET="020c877ea3b78bea9fb72e11e7aebe219f62ef70d6f1d52745ab35cdde23ac19"
+export TRELLO_NAME="TrelloWarrior"
+export TRELLO_EXPIRATION="30days"
