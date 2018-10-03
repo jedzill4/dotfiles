@@ -1,49 +1,56 @@
 set nocompatible               " be iMproved
 filetype off                   " required!
 
-call vundle#rc()
 
-" My Bundles here:
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+
+call vundle#begin()
+
+" My Plugins here:
 "
 " original repos on github
-" Bundle 'tpope/vim-fugitive'
-" Bundle 'Lokaltog/vim-easymotion'
-" Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
-" Bundle 'tpope/vim-rails.git'
+" Plugin 'tpope/vim-fugitive'
+" Plugin 'Lokaltog/vim-easymotion'
+" Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
+" Plugin 'tpope/vim-rails.git'
 " vim-scripts repos
-" Bundle 'L9'
-" Bundle 'FuzzyFinder'
+" Plugin 'L9'
+" Plugin 'FuzzyFinder'
 " non github repos
-" Bundle 'git://git.wincent.com/command-t.git'
+" Plugin 'git://git.wincent.com/command-t.git'
 " ...
 
-"Bundle 'https://github.com/altercation/vim-colors-solarized'
-"Bundle 'Xuyuanp/nerdtree-git-plugin'
-Bundle 'vim-scripts/ScrollColors'
-Bundle "b3niup/numbers.vim"
-Bundle 'https://github.com/nvie/vim-flake8'
-Bundle 'https://github.com/sjl/badwolf'
-Bundle 'https://github.com/tomasr/molokai'
-Bundle 'https://github.com/sickill/vim-monokai'
-Bundle 'https://github.com/jedzill4/vim-kalisi'  
-Bundle 'https://github.com/fweep/vim-zsh-path-completion'
-Bundle 'https://github.com/chrisbra/vim-zsh'
-Bundle 'vim-pandoc/vim-pandoc-syntax'
-Bundle 'vim-pandoc/vim-pandoc'
-Bundle 'https://github.com/vim-scripts/rest.vim'
-Bundle 'lervag/vimtex'
+"Plugin 'https://github.com/altercation/vim-colors-solarized'
+"Plugin 'Xuyuanp/nerdtree-git-plugin'
+Plugin 'vim-scripts/ScrollColors'
+Plugin "b3niup/numbers.vim"
+Plugin 'https://github.com/nvie/vim-flake8'
+Plugin 'https://github.com/sjl/badwolf'
+Plugin 'https://github.com/tomasr/molokai'
+Plugin 'https://github.com/sickill/vim-monokai'
+Plugin 'https://github.com/jedzill4/vim-kalisi'  
+Plugin 'https://github.com/fweep/vim-zsh-path-completion'
+Plugin 'https://github.com/chrisbra/vim-zsh'
+Plugin 'vim-pandoc/vim-pandoc-syntax'
+Plugin 'vim-pandoc/vim-pandoc'
+Plugin 'https://github.com/vim-scripts/rest.vim'
+Plugin 'lervag/vimtex'
+
+call vundle#end()            " required
+
 
 
 filetype plugin indent on     " required! 
 "
 " Brief help
-" :BundleList          - list configured bundles
-" :BundleInstall(!)    - install(update) bundles
-" :BundleSearch(!) foo - search(or refresh cache first) for foo
-" :BundleClean(!)      - confirm(or auto-approve) removal of unused bundles
+" :PluginList          - list configured bundles
+" :PluginInstall(!)    - install(update) bundles
+" :PluginSearch(!) foo - search(or refresh cache first) for foo
+" :PluginClean(!)      - confirm(or auto-approve) removal of unused bundles
 "
 " see :h vundle for more details or wiki for FAQ
-" NOTE: comments after Bundle command are not allowed..
+" NOTE: comments after Plugin command are not allowed..
 "
 
 "VIMTEX
