@@ -27,4 +27,7 @@ conky -c /home/rbarriga/.conky/config/memory &
 tint2 &
 onboard  &
 
+redshift-gtk &
+thunar --daemon&
+
 
