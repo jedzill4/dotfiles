@@ -36,6 +36,10 @@ Plugin 'vim-pandoc/vim-pandoc-syntax'
 Plugin 'vim-pandoc/vim-pandoc'
 Plugin 'https://github.com/vim-scripts/rest.vim'
 Plugin 'lervag/vimtex'
+Plugin 'scrooloose/syntastic'
+Plugin 'scrooloose/nerdtree'
+Plugin 'Xuyuanp/nerdtree-git-plugin'
+Plugin 'bling/vim-bufferline'
 
 call vundle#end()            " required
 
